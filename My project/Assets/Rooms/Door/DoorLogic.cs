@@ -6,7 +6,7 @@ public class DoorLogic : MonoBehaviour
 {
     public Transform theDoor;
     bool drawGUI = false;
-    bool doorIsClose = true;
+    bool laptopIsOff = true;
 
     void Update()
     {
@@ -43,15 +43,15 @@ public class DoorLogic : MonoBehaviour
 
     IEnumerator ChangeDoorState() // In order to WaitForSeconds to work, you need to create a IEnumerator coroutine
     {
-        if (doorIsClose == true)
+        if (laptopIsOff == true)
         {
             GameObject.Find("PivotDoor").GetComponent<Animation>().Play("Open");
             // audio for door opening
-            doorIsClose = false;
+            laptopIsOff = false;
             yield return new WaitForSeconds(3);
             GameObject.Find("PivotDoor").GetComponent<Animation>().Play("Close");
             //audio for door closing
-            doorIsClose = true;
+            laptopIsOff = true;
         }
     }
 }
