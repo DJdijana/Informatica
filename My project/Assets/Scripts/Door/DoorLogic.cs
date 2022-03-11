@@ -13,6 +13,7 @@ public class DoorLogic : MonoBehaviour
         if (drawGUI == true && Input.GetKeyDown(KeyCode.E))
         {
             StartCoroutine("ChangeDoorState"); // ChangeDoorState is a coroutine IEnumerator
+            drawGUI = false;
         }
     }
 

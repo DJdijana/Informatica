@@ -16,6 +16,7 @@ public class LaptopTransition : MonoBehaviour
         if (drawGUI == true && Input.GetKeyDown(KeyCode.E))
         {
             FadeToNextLevel();
+            drawGUI = false;
             //StartCoroutine("ChangeLaptopState"); // ChangeDoorState is a coroutine IEnumerator
         }
     }

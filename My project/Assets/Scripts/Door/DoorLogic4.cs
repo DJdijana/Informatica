@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DoorLogic3 : MonoBehaviour
+public class DoorLogic4 : MonoBehaviour
 {
     public Transform theDoor;
     bool drawGUI = false;
@@ -13,6 +13,7 @@ public class DoorLogic3 : MonoBehaviour
         if (drawGUI == true && Input.GetKeyDown(KeyCode.E))
         {
             StartCoroutine("ChangeDoorState"); // ChangeDoorState is a coroutine IEnumerator
+            drawGUI = false;
         }
     }
 
@@ -45,11 +46,11 @@ public class DoorLogic3 : MonoBehaviour
     {
         if (doorIsClose == true)
         {
-            GameObject.Find("PivotDoor 3").GetComponent<Animation>().Play("Open");
+            GameObject.Find("PivotDoor 4").GetComponent<Animation>().Play("Open");
             // audio for door opening
             doorIsClose = false;
             yield return new WaitForSeconds(3);
-            GameObject.Find("PivotDoor 3").GetComponent<Animation>().Play("Close");
+            GameObject.Find("PivotDoor 4").GetComponent<Animation>().Play("Close");
             //audio for door closing
             doorIsClose = true;
         }

@@ -2160,6 +2160,7 @@ Transform:
   - {fileID: 244109745}
   - {fileID: 982040296}
   - {fileID: 1996907970}
+  - {fileID: 806269310}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3388,6 +3389,11 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.1185136, y: 2.084923, z: 0.13779916}
   m_Center: {x: 0, y: -0.0024617312, z: 0}
+--- !u!4 &806269310 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 134429642799676232, guid: 43a6c1ef50185264bbf12d4315b65bf2, type: 3}
+  m_PrefabInstance: {fileID: 134429641916729747}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &824359130
 Mesh:
   m_ObjectHideFlags: 0
@@ -3982,7 +3988,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b450a92b52c32ed4d9aa21be81e9b834, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensivity: 150
+  mouseSensivity: 200
   playerBody: {fileID: 234748323}
 --- !u!1001 &982040295
 PrefabInstance:
@@ -7766,11 +7772,15 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 380959742}
     m_Modifications:
+    - target: {fileID: 134429642044330932, guid: 43a6c1ef50185264bbf12d4315b65bf2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 134429642799676232, guid: 43a6c1ef50185264bbf12d4315b65bf2, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 134429642799676232, guid: 43a6c1ef50185264bbf12d4315b65bf2, type: 3}
       propertyPath: m_LocalPosition.x
